@@ -1,176 +1,188 @@
-<!-- index.html - Add to <head> section -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    
-    <!-- Critical CSS inline -->
-    <style>
-        /* Critical above-the-fold CSS */
-        body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
-        .hero { min-height: 100vh; display: flex; align-items: center; }
-    </style>
-    
-    <!-- Defer non-critical CSS -->
-    <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
-    
-    <!-- SEO Meta Tags -->
-    <title>Your Company Name - Industry Leading Solutions</title>
-    <meta name="description" content="Discover innovative solutions for your business. We specialize in cutting-edge technology and exceptional service.">
-    <meta name="keywords" content="technology, solutions, business, innovation">
-    <meta name="author" content="Your Company Name">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourwebsite.com/">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Your Company Name - Industry Leading Solutions">
-    <meta property="og:description" content="Discover innovative solutions for your business">
-    <meta property="og:url" content="https://yourwebsite.com/">
-    <meta property="og:image" content="https://yourwebsite.com/assets/images/og-image.jpg">
-    <meta property="og:site_name" content="Your Company Name">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Your Company Name - Industry Leading Solutions">
-    <meta name="twitter:description" content="Discover innovative solutions for your business">
-    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/twitter-card.jpg">
-    
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Your Company Name",
-      "url": "https://yourwebsite.com",
-      "logo": "https://yourwebsite.com/assets/images/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-xxx-xxx-xxxx",
-        "contactType": "customer service",
-        "areaServed": "US",
-        "availableLanguage": "en"
-      },
-      "sameAs": [
-        "https://www.facebook.com/yourcompany",
-        "https://www.twitter.com/yourcompany",
-        "https://www.linkedin.com/company/yourcompany"
-      ]
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ART — Build your career</title>
+  <meta name="description" content="ART empowers people with skills, guidance, and opportunities to build their careers.">
+  favicon.ico
+
+  <!-- Tailwind (Play CDN) -->
+  https://cdn.tailwindcss.com</script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#2D68FF',         // primary
+            brandAccent: '#9B6BFF',   // accent
+            ink: '#2A2E3F'            // slate-ish heading color
+          }
+        }
+      }
     }
-    </script>
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#2563eb">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  </script>
+
+  <!-- Animate on Scroll (AOS) -->
+  <link rel="stylesheet@2.3.1/dist/aos.css
+  https://unpkg.com/aos@2.3.1/dist/aos.js</script>
+
+  <!-- Font Awesome Free (icons) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+       MContentLoaded', () => {
+      AOS.init({ once: true, duration: 650, easing: 'ease-out' });
+    });
+  </script>
+
+  <style>
+    /* small niceties without a build step */
+    .glass {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(8px);
+    }
+    .dark .glass {
+      background: rgba(15,23,42,0.6); /* slate-900-ish */
+    }
+  </style>
 </head>
-<body>
-  <a href="#main-content" class="skip-to-content">Skip to main content</a>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="container nav" aria-label="Main">
-      <a class="brand" href="/">
-        <img src="/assets/logo.svg" alt="ExampleCorp" width="32" height="32" />
-        <span>ExampleCorp</span>
+
+<body class="antialiased text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 glass border-b border-slate-200/60 dark:border-slate-700/60">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex itemsfa-person-chalkboard text-brand"></i>
+        <span>ART</span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">☰</button>
-      <ul id="primary-menu" class="menu">
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        #servicesServices</a>
+        <a hrefbout</a>
+        <a href="#contact" class="hover:text   <div class="flex items-center gap-2">
+        #contact
+          Get Started
+        </a>
+        <button id="themeToggle"
+                class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800"
+                aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container grid-2">
-        <div>
-          <h1>Build better data & AI products, faster.</h1>
-          <p>We architect platforms, productionize ML, and enable teams with proven delivery patterns.</p>
-          <div class="cta">
-            <a class="btn btn-primary" href="/services.html">Our services</a>
-            <a class="btn" href="/contact.html">Talk to us</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="/assets/hero.svg" alt="Illustration of data pipelines and AI" width="560" height="360" />
-        </div>
+  <!-- Hero -->
+  <section class="relative">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white to-blue-50/50
+                dark:from-slate-900 dark:to-slate-800"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" data-aos="fade-up">
+        Build Your Career with <span class="text-brand">ART</span>
+      </h1>
+      <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        We help you grow with personalized roadmaps, hands‑on training, and real opportunities — fast.
+      </p>
+      <div class="mt-8 flex items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="150">
+        <a href="#services"
+           class="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-lg shadow hover:     class="inline-flex items-center gap-2 border border-slate-300 dark:border-slate-700strip -->
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 opacity-70" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-sm">Career Dev</div>
+        <div class="text-sm">Tech Upskilling</div>
+        <div class="text-sm">Placement</div>
+        <div class="text-sm">Corporate Training</div>
       </div>
-    </section>
-
-    <section class="features">
-      <div class="container grid-3">
-        <article>
-          <h3>Modern Data</h3>
-          <p>Lakehouse, medallion architecture, and robust ELT with quality gates.</p>
-        </article>
-        <article>
-          <h3>MLOps</h3>
-          <p>Reproducible training, model registry, deployment strategies, and monitoring.</p>
-        </article>
-        <article>
-          <h3>GenAI</h3>
-          <p>RAG pipelines, safety guardrails, and evaluation-driven delivery.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="social-proof">
-      <div class="container">
-        <h2>Trusted by engineering-led organizations</h2>
-        <ul class="logo-row" aria-label="Client logos">
-          <li><span class="logo-pill">Client A</span></li>
-          <li><span class="logo-pill">Client B</span></li>
-          <li><span class="logo-pill">Client C</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container">
-        <h2>Have an initiative in mind?</h2>
-        <p>Get a free technical discovery and roadmap.</p>
-        <a class="btn btn-primary" href="/contact.html">Get started</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>ExampleCorp</strong>
-        <p>Data & AI Consulting</p>
-      </div>
-      <nav aria-label="Footer">
-        <ul class="footer-menu">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/sitemap.xml">Sitemap</a></li>
-        </ul>
-      </nav>
-      <div class="legal">© 2026 ExampleCorp · <a href="#">Privacy</a></div>
     </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-ink dark:text-white text-center" data-aos="fade-up">What we do</h2>
+    <p class="mt-3 text-center text-slate-600 dark:text-slate-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="50">
+      Modern, outcomes‑driven programs that turn skills into offers.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-12">
+      <!-- 1 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
+           data-aos="fade-up" data-aos-delay="50">
+        <i class="fa-solid fa-map text-brand text-2xl"></i>
+        <h3 class="mt-4 font-semibold text-lg">Career Development Roadmaps</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300 text-sm">
+          Personalized plans, mentorship, and progress tracking.
+        </p>
+      </div>
+      <!-- 2 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
+           data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-graduation-cap text-brand text-2xl"></i>
+        <h3 class="mt-4 font-semibold text-lg">Skills Training & Certifications</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300 text-sm">
+          Industry‑aligned tech & soft‑skills modules with assessments.
+        </p>
+      </div>
+      <!-- 3 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
+           data-aos="fade-up" data-aos-delay="150">
+        <i class="fa-solid fa-briefcase text-brand text-2xl"></i>
+        <h3 class="mt-4 font-semibold text-lg">Placement & Interview Coaching</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300 text-sm">
+          ATS‑ready resumes, mock interviews, and talent matching.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold">Why ART?</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">
+          We’re a career partner, not a course catalog. Clear roadmaps, real projects, and
+          measurable outcomes — all in one place.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700 dark:text-slate-300">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i> Mentorship that actually reviews your work</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i> Curated curricula matched to roles</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i> Interview prep + referrals</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-slate-200 dark:border-slate-700 p-6 bg-white dark:bg-slate-800"
+           data-aos="fade-left">
+        <div class="aspect-video rounded-lg bg-gradient-to-br from-brand/20 via-brandAccent/10 to-transparent"></div>
+        <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">Project snapshots / testimonials area</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto px-4 py-16">
+    <div class="rounded-2xl p-8 bg-gradient-to-br from-brand/10 to-brandAccent/10 border border-slate-200 dark:border-slate-700"
+         data-aos="fade-up">
+      <h2 class="text-2xl font-bold">Let’s build your career</h2>
+      <p class="mt-2 text-slate-700 dark:text-slate-300">Tell us what you want to achieve — we’ll reply within 24h.</p>
+      <form class="mt-6 grid md:grid-cols-2 gap-4">
+        <input class="px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+               placeholder="Your name">
+        <input class="px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+               placeholder="Email">
+        <textarea class="md:col-span-2 px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+                  rows="4" placeholder="What are you aiming for?"></textarea>
+        <button class="md:col-span-2 bg-brand text-white px-6 py-3 rounded-lg shadow hover:opacity-90">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500">
+    © <span id="year"></span> ART — Build your career.
   </footer>
-  <script src="/assets/js/main.js" defer></script>
+
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
-    }
+    // smooth dark-mode toggle (no persistence by design; can add localStorage if you want)
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
