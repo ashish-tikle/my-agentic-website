@@ -1,50 +1,84 @@
-
-<!doctype html>
+<!-- index.html - Add to <head> section -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ExampleCorp — Data & AI Consulting</title>
-  <meta name="description" content="ExampleCorp helps organizations build modern data platforms, ML systems, and analytics applications." />
-  <link rel="canonical" href="https://your-domain.example/" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="theme-color" content="#0f172a" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="ExampleCorp — Data & AI Consulting" />
-  <meta property="og:description" content="We deliver end-to-end platforms and ML solutions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-domain.example/" />
-  <meta property="og:image" content="https://your-domain.example/assets/social-card.png" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ExampleCorp — Data & AI Consulting" />
-  <meta name="twitter:description" content="We deliver end-to-end platforms and ML solutions." />
-  <meta name="twitter:image" content="https://your-domain.example/assets/social-card.png" />
-  <link rel="stylesheet" href="/styles/main.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ExampleCorp",
-    "url": "https://your-domain.example/",
-    "logo": "https://your-domain.example/assets/logo.svg",
-    "sameAs": [
-      "https://www.linkedin.com/company/example",
-      "https://github.com/examplecorp"
-    ],
-    "contactPoint": [
-      {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- Critical CSS inline -->
+    <style>
+        /* Critical above-the-fold CSS */
+        body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+        .hero { min-height: 100vh; display: flex; align-items: center; }
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+    
+    <!-- SEO Meta Tags -->
+    <title>Your Company Name - Industry Leading Solutions</title>
+    <meta name="description" content="Discover innovative solutions for your business. We specialize in cutting-edge technology and exceptional service.">
+    <meta name="keywords" content="technology, solutions, business, innovation">
+    <meta name="author" content="Your Company Name">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourwebsite.com/">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Your Company Name - Industry Leading Solutions">
+    <meta property="og:description" content="Discover innovative solutions for your business">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Your Company Name">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Company Name - Industry Leading Solutions">
+    <meta name="twitter:description" content="Discover innovative solutions for your business">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/twitter-card.jpg">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Your Company Name",
+      "url": "https://yourwebsite.com",
+      "logo": "https://yourwebsite.com/assets/images/logo.png",
+      "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-555-555-0100",
-        "contactType": "sales",
-        "email": "hello@example.com"
-      }
-    ]
-  }
-  </script>
+        "telephone": "+1-xxx-xxx-xxxx",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": "en"
+      },
+      "sameAs": [
+        "https://www.facebook.com/yourcompany",
+        "https://www.twitter.com/yourcompany",
+        "https://www.linkedin.com/company/yourcompany"
+      ]
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="container nav" aria-label="Main">
@@ -132,7 +166,7 @@
       <div class="legal">© 2026 ExampleCorp · <a href="#">Privacy</a></div>
     </div>
   </footer>
-  <script src="/scripts/main.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));

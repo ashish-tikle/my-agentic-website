@@ -1,0 +1,19 @@
+/* Critical CSS - Inline this in <head> */
+body { 
+    margin: 0; 
+    font-family: system-ui, -apple-system, sans-serif; 
+    line-height: 1.6;
+}
+.hero { 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 50;
+}
