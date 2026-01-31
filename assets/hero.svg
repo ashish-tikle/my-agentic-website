@@ -1,0 +1,21 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='520' viewBox='0 0 800 520' role='img' aria-label='Data and AI illustration'>
+  <rect width='100%' height='100%' fill='#e2e8f0'/>
+  <g stroke='#0f172a' stroke-width='2' fill='none' opacity='0.8'>
+    <rect x='60' y='80' width='180' height='110' rx='8'/>
+    <rect x='60' y='220' width='180' height='110' rx='8'/>
+    <rect x='60' y='360' width='180' height='110' rx='8'/>
+    <rect x='320' y='150' width='180' height='110' rx='8'/>
+    <rect x='560' y='230' width='180' height='110' rx='8'/>
+    <path d='M240 135 C300 140 300 200 320 205'/>
+    <path d='M240 275 C300 280 300 240 320 235'/>
+    <path d='M500 205 C540 230 540 260 560 285'/>
+  </g>
+  <g font-family='system-ui, -apple-system, Segoe UI' font-size='18' fill='#0f172a'>
+    <text x='85' y='140'>Ingest</text>
+    <text x='85' y='280'>Transform</text>
+    <text x='85' y='420'>Serve</text>
+    <text x='350' y='210'>ML Training</text>
+    <text x='590' y='295'>Applications</text>
+  </g>
+</svg>

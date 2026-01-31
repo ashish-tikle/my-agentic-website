@@ -1,0 +1,142 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ExampleCorp — Data & AI Consulting</title>
+  <meta name="description" content="ExampleCorp helps organizations build modern data platforms, ML systems, and analytics applications." />
+  <link rel="canonical" href="https://your-domain.example/" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ExampleCorp — Data & AI Consulting" />
+  <meta property="og:description" content="We deliver end-to-end platforms and ML solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta property="og:image" content="https://your-domain.example/assets/social-card.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ExampleCorp — Data & AI Consulting" />
+  <meta name="twitter:description" content="We deliver end-to-end platforms and ML solutions." />
+  <meta name="twitter:image" content="https://your-domain.example/assets/social-card.png" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ExampleCorp",
+    "url": "https://your-domain.example/",
+    "logo": "https://your-domain.example/assets/logo.svg",
+    "sameAs": [
+      "https://www.linkedin.com/company/example",
+      "https://github.com/examplecorp"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-555-0100",
+        "contactType": "sales",
+        "email": "hello@example.com"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg" alt="ExampleCorp" width="32" height="32" />
+        <span>ExampleCorp</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">☰</button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container grid-2">
+        <div>
+          <h1>Build better data & AI products, faster.</h1>
+          <p>We architect platforms, productionize ML, and enable teams with proven delivery patterns.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="/services.html">Our services</a>
+            <a class="btn" href="/contact.html">Talk to us</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="/assets/hero.svg" alt="Illustration of data pipelines and AI" width="560" height="360" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container grid-3">
+        <article>
+          <h3>Modern Data</h3>
+          <p>Lakehouse, medallion architecture, and robust ELT with quality gates.</p>
+        </article>
+        <article>
+          <h3>MLOps</h3>
+          <p>Reproducible training, model registry, deployment strategies, and monitoring.</p>
+        </article>
+        <article>
+          <h3>GenAI</h3>
+          <p>RAG pipelines, safety guardrails, and evaluation-driven delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-proof">
+      <div class="container">
+        <h2>Trusted by engineering-led organizations</h2>
+        <ul class="logo-row" aria-label="Client logos">
+          <li><span class="logo-pill">Client A</span></li>
+          <li><span class="logo-pill">Client B</span></li>
+          <li><span class="logo-pill">Client C</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Have an initiative in mind?</h2>
+        <p>Get a free technical discovery and roadmap.</p>
+        <a class="btn btn-primary" href="/contact.html">Get started</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ExampleCorp</strong>
+        <p>Data & AI Consulting</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-menu">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </nav>
+      <div class="legal">© 2026 ExampleCorp · <a href="#">Privacy</a></div>
+    </div>
+  </footer>
+  <script src="/scripts/main.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</body>
+</html>

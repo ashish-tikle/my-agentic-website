@@ -1,0 +1,13 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64' role='img' aria-label='ExampleCorp logo'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#2563eb'/>
+      <stop offset='100%' stop-color='#06b6d4'/>
+    </linearGradient>
+  </defs>
+  <rect rx='12' width='64' height='64' fill='url(#g)'/>
+  <g fill='white' transform='translate(12,12)'>
+    <path d='M8 8h12v6H8zM8 22h24v6H8zM8 36h32v6H8z' opacity='.95'/>
+  </g>
+</svg>
